@@ -1,12 +1,11 @@
 package com.humanheima.blurimgdemo;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.wonderkiln.blurkit.BlurKit;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 import com.wonderkiln.blurkit.BlurLayout;
 
 import butterknife.BindView;
@@ -22,21 +21,27 @@ public class BlurkitActivity extends AppCompatActivity {
     ImageView imgSunMain;
     @BindView(R.id.img_sun_main_bottom)
     ImageView imgSunMainBottom;
+    @BindView(R.id.blurLayout_sun_main)
+    BlurLayout blurLayoutSunMain;
+    @BindView(R.id.blurLayout_sun_main_bottom)
+    BlurLayout blurLayoutSunMainBottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picasso);
         ButterKnife.bind(this);
-        // View
-        //BlurKit.blur(View src, int radius);
-        // Bitmap
-        //BlurKit.blur(Bitmap src, int radius);
-        //BlurKit.fastBlur(View src, int radius, float downscaleFactor);
-        Bitmap bitmap = ((BitmapDrawable) imgSunMain.getDrawable()).getBitmap();
-        BlurKit.getInstance().blur(bitmap, 4);
+        Picasso.with(this).load(R.drawable.sun_main).into(imgSunMain, new Callback() {
+            @Override
+            public void onSuccess() {
+                //blurLayoutSunMain.invalidate();
+            }
 
-        // BlurKit.getInstance().fastBlur(imgSunMainBottom, 8, 7);
+            @Override
+            public void onError() {
+
+            }
+        });
     }
 
 }
