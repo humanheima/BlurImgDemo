@@ -1,0 +1,107 @@
+{
+    "android_gradle_plugin_version": "2.2.3",
+    "apk_path": "D:\\BlurImgDemo\\blurimgdemo\\build\\outputs\\apk\\blurimgdemo-debug.apk",
+    "apt": {
+        
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": true
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "D:\\BlurImgDemo\\blurimgdemo\\build\\freeline",
+    "build_directory": "D:\\BlurImgDemo\\blurimgdemo\\build",
+    "build_script": "gradlew.bat :blurimgdemo:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\build-tools\\24.0.2",
+    "build_tools_version": "24.0.2",
+    "compile_sdk_directory": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\platforms\\android-24",
+    "compile_sdk_version": "android-24",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.humanheima.blurimgdemo",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "D:\\BlurImgDemo",
+    "freeline_gradle_plugin_version": "0.8.3",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_91",
+    "launcher": "com.humanheima.blurimgdemo.MainActivity",
+    "main_assets_directory": [
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\assets",
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\jniLibs",
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\jniLibs"
+    ],
+    "main_jni_directory": [
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\jni",
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\jni"
+    ],
+    "main_manifest_path": "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "blurimgdemo",
+    "main_project_name": "blurimgdemo",
+    "main_r_path": "D:\\BlurImgDemo\\blurimgdemo\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\res",
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\java",
+        "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "blurimgdemo": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "blurimgdemo",
+            "path": "D:\\BlurImgDemo\\blurimgdemo"
+        }
+    ],
+    "package": "com.humanheima.blurimgdemo",
+    "product_flavor": "",
+    "project_source_sets": {
+        "blurimgdemo": {
+            "main_assets_directory": [
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\assets",
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\jniLibs",
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\jni",
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\res",
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\debug\\java",
+                "D:\\BlurImgDemo\\blurimgdemo\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "D:\\BlurImgDemo",
+    "sdk_directory": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk",
+    "use_jdk8": true
+}
