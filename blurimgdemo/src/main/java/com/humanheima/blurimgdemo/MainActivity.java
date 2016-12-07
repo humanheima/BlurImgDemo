@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     SeekBar seekbar;
     @BindView(R.id.btn_blurKit)
     Button btnBlurKit;
+    @BindView(R.id.img_bottom)
+    ImageView imgBottom;
     /**
      * 透明度
      */
@@ -47,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess() {
                 Bitmap bitmap = ((BitmapDrawable) img.getDrawable()).getBitmap();
-                img.setImageBitmap(BlurBitmap.blur(MainActivity.this, bitmap));
                 imgBigBelow.setImageBitmap(BlurBitmap.blur(MainActivity.this, bitmap));
             }
 
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        Bitmap bitmap = ((BitmapDrawable) imgBottom.getDrawable()).getBitmap();
+        imgBottom.setImageBitmap(BlurBitmap.blur(MainActivity.this, bitmap));
     }
 
 

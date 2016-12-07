@@ -29,19 +29,27 @@
             android:layout_centerInParent="true" />
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/btn_blurKit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="blurKit"
-        android:layout_below="@+id/rl_top" />
-
     <SeekBar
         android:id="@+id/seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_top"
         android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/seekbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sun_main" />
+
+    <Button
+        android:id="@+id/btn_blurKit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="blurKit" />
 
 
 </RelativeLayout>
