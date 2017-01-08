@@ -40,5 +40,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     //模糊图片的开源库
-    compile 'com.wonderkiln:blurkit:1.0.0'
+   /* compile 'com.wonderkiln:blurkit:1.0.0'*/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }

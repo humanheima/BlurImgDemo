@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#bdbdbd">
 
-    <RelativeLayout
-        android:id="@+id/rl_top"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_big_below"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/img_big_above"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_marginBottom="40dp" />
 
         <ImageView
-            android:id="@+id/img_big_below"
+            android:id="@+id/img_next"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/seekbar"
+            android:layout_marginTop="8dp"
             android:scaleType="centerCrop" />
 
         <ImageView
-            android:id="@+id/img_big_above"
+            android:id="@+id/img_bottom"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerInParent="true" />
-    </RelativeLayout>
-
-    <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rl_top"
-        android:layout_marginBottom="40dp" />
-
-    <ImageView
-        android:id="@+id/img_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_below="@+id/seekbar"
-        android:scaleType="centerCrop"
-        android:src="@drawable/sun_main" />
-
-    <Button
-        android:id="@+id/btn_blurKit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="blurKit" />
+            android:layout_height="200dp"
+            android:layout_below="@+id/seekbar"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sun_main" />
+    </LinearLayout>
 
 
-</RelativeLayout>
+</ScrollView>

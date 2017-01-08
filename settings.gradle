@@ -1,1 +1,1 @@
-include ':app', ':blurimgdemo'
+include ':blurimgdemo'
